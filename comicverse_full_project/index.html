@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ComicVerse Hub</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="logo" href="index.html">ComicVerse Hub</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse</a>
+        <a href="cart.html">Cart <span id="cart-count">(0)</span></a>
+      </nav>
+      <button class="hamburger" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero carousel -->
+    <section class="hero">
+      <div class="carousel" id="hero-carousel">
+        <!-- slides injected by JS -->
+      </div>
+      <button class="carousel-btn prev" data-dir="prev">‹</button>
+      <button class="carousel-btn next" data-dir="next">›</button>
+    </section>
+
+    <section class="container highlights">
+      <h2>New Releases</h2>
+      <div class="cards" id="new-releases">
+        <!-- injected -->
+      </div>
+    </section>
+
+    <section class="container highlights">
+      <h2>Popular Series</h2>
+      <div class="cards" id="popular-series">
+      </div>
+    </section>
+
+    <section class="container publishers">
+      <h2>Publisher Spotlights</h2>
+      <div class="publisher-grid">
+        <div class="publisher-card">Marvel</div>
+        <div class="publisher-card">DC</div>
+        <div class="publisher-card">Image</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© ComicVerse Hub</div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/comics.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
