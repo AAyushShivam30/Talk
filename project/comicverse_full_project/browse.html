@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Browse — ComicVerse Hub</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="logo" href="index.html">ComicVerse Hub</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse</a>
+        <a href="cart.html">Cart <span id="cart-count">(0)</span></a>
+      </nav>
+      <button class="hamburger" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Browse All Comics</h1>
+
+    <div class="controls">
+      <div class="filter-group">
+        <label>Publisher</label>
+        <select id="filter-publisher">
+          <option value="all">All</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Genre</label>
+        <select id="filter-genre">
+          <option value="all">All</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Sort</label>
+        <select id="sort-by">
+          <option value="default">Featured</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="title-asc">Title: A → Z</option>
+          <option value="date-desc">Release: New → Old</option>
+        </select>
+      </div>
+
+      <div class="search">
+        <input id="search-input" placeholder="Search title or character...">
+      </div>
+    </div>
+
+    <div id="browse-grid" class="cards"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© ComicVerse Hub</div>
+  </footer>
+
+  <script src="assets/js/comics.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Comic Detail — ComicVerse Hub</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="logo" href="index.html">ComicVerse Hub</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse</a>
+        <a href="cart.html">Cart <span id="cart-count">(0)</span></a>
+      </nav>
+      <button class="hamburger" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container detail-page">
+    <div class="detail-left">
+      <div class="cover-wrap">
+        <img id="detail-cover" src="assets/img/placeholder1.jpg" alt="cover"/>
+      </div>
+    </div>
+    <div class="detail-right">
+      <h1 id="detail-title">Title</h1>
+      <p id="detail-publisher" class="muted">Publisher</p>
+      <p id="detail-creators" class="muted">Creators</p>
+      <p id="detail-synopsis">Synopsis</p>
+      <div class="price-row">
+        <div class="price" id="detail-price">$0.00</div>
+        <div>
+          <input id="qty" type="number" min="1" value="1" style="width:60px">
+          <button id="add-to-cart" class="btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© ComicVerse Hub</div>
+  </footer>
+
+  <script src="assets/js/comics.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
